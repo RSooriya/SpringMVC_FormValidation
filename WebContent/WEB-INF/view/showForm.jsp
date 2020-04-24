@@ -36,8 +36,9 @@ Field marked with <span class=asterik>*</span> are mandatory
 <td><form:errors path="age" cssClass="error"/></td>
 </tr>
 <tr>
-<td>Phone Number</td>
+<td>Phone Number<span class="asterik">*</span></td>
 <td><form:input path="phoneNumber"/></td>
+<td><form:errors path="phoneNumber" cssClass="error"/></td>
 </tr>
 <tr>
 <td>Pincode</td>
@@ -45,8 +46,9 @@ Field marked with <span class=asterik>*</span> are mandatory
 <td><form:errors path="pincode" cssClass="error"/></td>
 </tr>
 <tr>
-<td>Course Code</td>
+<td>Course Code<span class="asterik">*</span></td>
 <td><form:input path="courseCode"/></td>
+<td><form:errors path="courseCode" cssClass="error"/></td>
 </tr>
 <tr>
 <td><input type="submit" value="Submit"></td>

@@ -7,6 +7,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.pack.sooriya.validation.CourseCode;
+
 public class Customer {
 
 	@NotBlank
@@ -18,6 +20,8 @@ public class Customer {
 	private Integer age;
 	@Pattern(regexp="^[0-9]{6}")
 	private String pincode;
+	@CourseCode(value="UDEMY")
+	@NotBlank
 	private String courseCode;
 	private String phoneNumber;
 	public String getName() {
