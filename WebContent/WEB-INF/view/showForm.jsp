@@ -9,6 +9,7 @@
 <style>
 table
 {
+text-align:left;
 border-spacing:10px;
 }
 .asterik
@@ -22,31 +23,33 @@ color:red;
 </style>
 </head>
 <body>
+<h2>Application Form</h2>
 <form:form action="processForm" modelAttribute="customer">
 Field marked with <span class=asterik>*</span> are mandatory
 <table>
 <tr>
-<td>Name<span class="asterik">*</span></td>
+<th>Name<span class="asterik">*</span></th>
 <td><form:input path="name"/></td>
 <td><form:errors path="name" cssClass="error"/></td>
 </tr>
 <tr>
-<td>Age<span class="asterik">*</span></td>
+<th>Age<span class="asterik">*</span></th>
 <td><form:input path="age"/></td>
 <td><form:errors path="age" cssClass="error"/></td>
 </tr>
 <tr>
-<td>Phone Number<span class="asterik">*</span></td>
+<th>Phone Number<span class="asterik">*</span></th>
 <td><form:input path="phoneNumber"/></td>
 <td><form:errors path="phoneNumber" cssClass="error"/></td>
+<td></td>
 </tr>
 <tr>
-<td>Pincode</td>
+<th>Pincode</th>
 <td><form:input path="pincode"/></td>
 <td><form:errors path="pincode" cssClass="error"/></td>
 </tr>
 <tr>
-<td>Course Code<span class="asterik">*</span></td>
+<th>Course Code<span class="asterik">*</span></th>
 <td><form:input path="courseCode"/></td>
 <td><form:errors path="courseCode" cssClass="error"/></td>
 </tr>

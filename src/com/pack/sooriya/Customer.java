@@ -8,6 +8,7 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import com.pack.sooriya.validation.CourseCode;
+import com.pack.sooriya.validation.PhoneNumber;
 
 public class Customer {
 
@@ -23,6 +24,8 @@ public class Customer {
 	@CourseCode(value="UDEMY")
 	@NotBlank
 	private String courseCode;
+	@PhoneNumber
+	@NotBlank
 	private String phoneNumber;
 	public String getName() {
 		return name;
