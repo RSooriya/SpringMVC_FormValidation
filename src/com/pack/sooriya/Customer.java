@@ -1,6 +1,9 @@
 package com.pack.sooriya;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 public class Customer {
@@ -8,6 +11,9 @@ public class Customer {
 	@NotBlank
 	@Size(min=6)
 	private String name;
+	@NotNull
+	@Max(value=18)
+	@Min(value=0)
 	private Integer age;
 	private String pincode;
 	private String courseCode;

@@ -31,8 +31,9 @@ Field marked with <span class=asterik>*</span> are mandatory
 <td><form:errors path="name" cssClass="error"/></td>
 </tr>
 <tr>
-<td>Age</td>
+<td>Age<span class="asterik">*</span></td>
 <td><form:input path="age"/></td>
+<td><form:errors path="age" cssClass="error"/></td>
 </tr>
 <tr>
 <td>Phone Number</td>
