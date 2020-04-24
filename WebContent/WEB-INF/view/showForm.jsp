@@ -42,6 +42,7 @@ Field marked with <span class=asterik>*</span> are mandatory
 <tr>
 <td>Pincode</td>
 <td><form:input path="pincode"/></td>
+<td><form:errors path="pincode" cssClass="error"/></td>
 </tr>
 <tr>
 <td>Course Code</td>
