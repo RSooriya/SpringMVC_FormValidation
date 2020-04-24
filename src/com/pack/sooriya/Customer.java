@@ -1,7 +1,12 @@
 package com.pack.sooriya;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
 public class Customer {
 
+	@NotBlank
+	@Size(min=6)
 	private String name;
 	private Integer age;
 	private String pincode;

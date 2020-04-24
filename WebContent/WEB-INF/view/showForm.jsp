@@ -11,14 +11,24 @@ table
 {
 border-spacing:10px;
 }
+.asterik
+{
+color:red;
+}
+.error
+{
+color:red;
+}
 </style>
 </head>
 <body>
 <form:form action="processForm" modelAttribute="customer">
+Field marked with <span class=asterik>*</span> are mandatory
 <table>
 <tr>
-<td>Name</td>
+<td>Name<span class="asterik">*</span></td>
 <td><form:input path="name"/></td>
+<td><form:errors path="name" cssClass="error"/></td>
 </tr>
 <tr>
 <td>Age</td>
